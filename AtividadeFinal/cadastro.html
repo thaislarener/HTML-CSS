@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container-lg">
+        <div class="imagem">
+            <img src="sign-up2.png" height="400vh" width="auto" >
+        </div>
+        <div class="col-md-5 col-lg-6">
+            <h4 class="mb-3">Registre-se agora mesmo!</h4>
+            <p>Já é cadastrado?<a href="http://127.0.0.1:5500/home.html">Faça login!</a></p>
+            <hr class="my-3">
+            <form class="needs-validation" novalidate="">
+              <div class="row g-2">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Nos diga seu nome...</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">...e o seu sobrenome!</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="username" class="form-label">Escolha o nome de um usuário bem legal!</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="@JoaozinhoBrabo" required="">
+                  <div class="invalid-feedback">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="email" class="form-label">Qual o seu e-mail?</label>
+                  <input type="email" class="form-control" id="email" placeholder="joazionho@provedor.com">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="state" class="form-label">Estado/UF</label>
+                  <select class="form-select" id="state" required="">
+                    <option value="">Escolha...</option>
+                    <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapá</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceará</option>
+                    <option>Distrito Federal</option>
+                    <option>Espírito Santo</option>
+                    <option>Goiás</option>
+                    <option>Maranhão</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>Minas Gerais</option>
+                    <option>Pará</option>
+                    <option>Paraíba</option>
+                    <option>Paraná</option>
+                    <option>Pernambuco</option>
+                    <option>Piauí</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Rondônia</option>
+                    <option>Roraima</option>
+                    <option>Santa Catarina</option>
+                    <option>São Paulo</option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+                
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Cidade</label>
+                  <select class="form-select" id="cidade" required="">
+                    <option value="">Escolha...</option>
+                    <option>Campo Grande</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid town.
+                  </div>
+                </div>
+    
+    
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">CEP</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+              </div>
+    
+              <hr class="my-3">
+    
+              <div class="row gy-2">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Defina uma senha</label>
+                  <input type="text" class="form-control" id="senha" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Digite sua senha
+                  </div>
+                </div>
+    
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Confirme sua nova senha:</label>
+                  <input type="text" class="form-control" id="senha" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    confirme sua senha
+                  </div>
+                </div>
+
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Confirmo que li e concordo com os <a href="">termos de uso</a> do sistema.</label>
+              </div>
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Desejo receber e-mail sobre novidades, alertas e notificações.</label>
+              </div>
+              <br>
+              <button class="w-100 btn btn-success btn-lg" type="submit">Confirmar cadastro</button>
+            </form>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    grid-template-areas:
+    'hd hd hd hd hd'
+    'sc sc sc as as'
+    'sc sc sc as as'
+    'sc sc sc as as'
+    'ft ft ft ft ft';
+    width: 90%;
+    height: 800px;
+    margin: 5vh auto;
+}
+
+header {
+    grid-area: hd;
+    background-color: red;
+}
+
+section {
+    display: grid;
+    grid-area: sc;
+    background-color: blue;
+    padding: 5px;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+article {
+    background-color: aqua;
+    margin: 3px;
+}
+
+
+aside {
+    grid-area: as;
+    background-color: green;
+}
+
+footer {
+    grid-area: ft;
+    background-color: gray;
+}
